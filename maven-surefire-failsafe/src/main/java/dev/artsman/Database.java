@@ -23,17 +23,8 @@
  */
 package dev.artsman;
 
-/**
- * Simple Application class
- */
-class Application {
-  private final String name;
+import java.util.Set;
 
-  Application(String name) {
-    this.name = name;
-  }
-
-  String name() {
-    return this.name;
-  }
+interface Database {
+  Set<Person> findAll();
 }
